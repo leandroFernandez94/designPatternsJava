@@ -1,0 +1,52 @@
+Comportamiento
+  
+  Chain of responsability: lista de objetos que pueden resolver un metodo, si uno no puede resolver un metodo le pasa la responsabilidad al siguiente hasta que haya un resultado, se busca desacoplar al emisor de su receptor. Ejemplo cadena de loggers
+
+  Command: se encapsulan comandos en objetos, luego un objeto dispacher puede guardar referencias a estos objetos y ejecutar sus ordenes cuando lo desee, aislandose de la implementacion de ese comando.
+
+  Interpreter: provee una manera de interpretar expresiones gramaticales, encapsulando los operadores en metodos
+
+  Iterator: Provee una interfaz para recorrer un array de objetos sin exponer la implementacion de la coleccion
+
+  Mediator: Objeto que provee una interfaz para la comunicacion entre objetos. (Ej. servidor en un chat)
+
+  Memento: Permite guardar diferentes imagenes del estado que tuvo un objeto a traves del tiempo:
+    memento: objeto que representa una imagen de estado
+    originator: objeto que guarda el estado actual y es capaz de generar mementos
+    Caretaker: objeto que guarda lista de mementos
+
+  Null Object: Encapsula la ausencia de un objeto mediante otro objeto que provee un comportamiento “do nothing”(no hacer nada)
+    por omisión. evita excepciones null pointer
+
+  Observer: Cuando un objeto observado cambia su estado, notifica a todos sus observers mediante un metodo publico o un objeto intermediario
+
+  State: un objeto delega su estado interno a un objeto abstracto State que dependiendo de su implementacion actual cambiara su comportamiento.
+
+  Strategy: Abstraer la implementacion de un metodo a una interfaz. Permite que un objeto pueda cambiar la implementacion de un metodo en tiempo de ejecucion.
+
+  Template: se define el esqueleto de un algoritmo(secuencia de metodos abstractos) en una clase abstracta dejando que las clases que heredan definan la implementacion de esos metodos.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Creacionales
+
+  Abstract Factory: clase abstracta de factories para poder cambiar su implementacion en runtime
+
+  Builder: Objeto que ofrece una interfaz para crear un objeto final a partir de otros objetos que crea en su implementacion interna.
+
+  Factory: Objeto creador de objetos, no se expone la logica de creacion
+
+  Prototype: Se genera una cache de prototipos de objetos, luego cuando se requiere un de esos en vez de crear uno nuevo se retorna una referencia, mejorando performance general de la aplicacion.
+
+  Singleton: Se permite una sola instancia de una clase, administrada por un metodo de clase. De no existir se crea, sino se devuelve una referencia.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Estructurales
+
+  Adapter: Cuando la estructura de una clase de refactoriza, pero hay data persistida con el modelo viejo, el adapter implementa la interfaz nueva a partir de objetos con el modelo viejo.
+
+  Bridge: Se genera un objeto a partir de la composicion new F(new G), para poder desacoplar la implementacion de algunos metodos de F a la clase G, creando un "puente" entre estos 2 objetos
+
+  
