@@ -32,7 +32,7 @@ Creacionales
 
   Abstract Factory: clase abstracta de factories para poder cambiar su implementacion en runtime
 
-  Builder: Objeto que ofrece una interfaz para crear un objeto final a partir de otros objetos que crea en su implementacion interna.
+  Builder: Objeto que ofrece una interfaz para crear un objeto finaghtl a partir de otros objetos que crea en su implementacion interna.
 
   Factory: Objeto creador de objetos, no se expone la logica de creacion
 
@@ -49,4 +49,12 @@ Estructurales
 
   Bridge: Se genera un objeto a partir de la composicion new F(new G), para poder desacoplar la implementacion de algunos metodos de F a la clase G, creando un "puente" entre estos 2 objetos
 
-  
+  Composite: Se crea un objeto componiendo otros objetos, creando una estructura de arbol. ej cursograma
+
+  Decorator: se agrega funcionalidad a un objeto a traves de la composicion.
+
+  Facade: Provee una interfaz unificada a un set de interfaces en un subsistema. Define una interfaz de más alto nivel para simplificar el uso del sistema.
+
+  Flyweight: Emplear objetos compartidos que son similares, en lugar de crear nuevas instancias. Se usa cuando se necesita crear muchos objetos similares. Mejora la performance, ya que reduce el uso de memoria.
+
+  Proxy: Proveer un sustituto de otro objeto para controlar el acceso al mismo. El real como el proxy implementan la misma interfaz.
